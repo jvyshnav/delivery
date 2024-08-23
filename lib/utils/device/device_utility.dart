@@ -60,6 +60,10 @@ class DDeviceUtils {
     return kBottomNavigationBarHeight;
   }
 
+  static double getAppBarHeight(){
+    return kToolbarHeight;
+  }
+
   // Check if the device has an internet connection
   static Future<bool> hasInternetConnection() async {
     try {
