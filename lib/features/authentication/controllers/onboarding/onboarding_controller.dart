@@ -1,3 +1,4 @@
+import 'package:delivery/features/authentication/screens/login/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
@@ -17,10 +18,10 @@ class OnBoardingController extends GetxController {
     pageController.jumpTo(index);
   }
 
-  ///upate current index and jump to next page
+  ///update current index and jump to next page
   void nextPage() {
-    if (currentPageIndex == 2) {
-      // Get.to(LoginScreen());
+    if (currentPageIndex.value == 2) {
+      Get.offAll(const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);

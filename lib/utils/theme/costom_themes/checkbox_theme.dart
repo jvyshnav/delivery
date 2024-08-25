@@ -8,7 +8,7 @@ class DCheckboxTheme {
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith<Color?>(
-          (states) {
+      (states) {
         if (states.contains(WidgetState.selected)) {
           return Colors.white;
         }
@@ -16,7 +16,7 @@ class DCheckboxTheme {
       },
     ),
     fillColor: WidgetStateProperty.resolveWith<Color?>(
-          (states) {
+      (states) {
         if (states.contains(WidgetState.selected)) {
           return Colors.blue;
         }
@@ -29,7 +29,7 @@ class DCheckboxTheme {
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith<Color?>(
-          (states) {
+      (states) {
         if (states.contains(WidgetState.selected)) {
           return Colors.white;
         }
@@ -37,9 +37,9 @@ class DCheckboxTheme {
       },
     ),
     fillColor: WidgetStateProperty.resolveWith<Color?>(
-          (states) {
+      (states) {
         if (states.contains(WidgetState.selected)) {
-          return Colors.blueGrey;
+          return Colors.blue;
         }
         return Colors.transparent;
       },

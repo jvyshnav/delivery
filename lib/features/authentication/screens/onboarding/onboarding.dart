@@ -1,4 +1,4 @@
-import 'package:delivery/app.dart';
+
 import 'package:delivery/features/authentication/controllers/onboarding/onboarding_controller.dart';
 import 'package:delivery/utils/constants/colors.dart';
 import 'package:delivery/utils/constants/image_strings.dart';
